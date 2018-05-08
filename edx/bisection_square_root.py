@@ -1,0 +1,20 @@
+# bisection method finding square root
+
+x = 30
+epsilon = 0.01
+num_guesses = 0
+low = 1
+high = x
+ans = (high+low)/2.0
+
+while abs(ans**2-x) >= epsilon:
+    print("low =", low, "high =", high, "ans =", ans)
+    num_guesses += 1
+    if ans**2 < x:
+        low = ans
+    else:
+        high = ans
+    ans = (low+high)/2.0
+
+print("Number if iterations:", num_guesses)
+print(ans, "is close to square root of", x)

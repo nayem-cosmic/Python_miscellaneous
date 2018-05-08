@@ -1,0 +1,8 @@
+NodeIndex        Displacement
+        1              0.0000
+        2              0.2326
+        3              0.0000
+
+ElementIndex              Stress              Strain
+           1             54.2636              0.0008
+           2           -116.2791             -0.0006
